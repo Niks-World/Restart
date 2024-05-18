@@ -3,14 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <title>Panda Card</title>
 </head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Press Start 2P', cursive; /* Use a pixelated font */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.panda-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h3 {
+    color: #b0b050;
+    font-family: 'Press Start 2P', cursive; /* Use a pixelated font */
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.rating {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #000;
+}
+
+</style>
 <body>
-    <header>Title</header>
+    <div class="container">
+        <h1>Title</h1>
     <h1>Panda Card</h1>
-    <div>
+    </div>
+    
+    <div class="card">
         <div>
-            <img src="" alt="">
+            <img src="panda.png" alt="" class="panda-img">
+            <h3>Jhon Doe</h3>
+            <p>Computer Science 1</p>
+            <p>Computer Science</p>
+            <p>Year: 3</p>
+            <div class="rating">
+                ★★★★☆
+            </div>
         </div>
     </div>
     
