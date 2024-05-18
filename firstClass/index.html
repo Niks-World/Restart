@@ -6,9 +6,89 @@
     <title>Feedback Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<style> 
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 10px;
+    background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(153,0,0,1) 100%);
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 5%;
+    width: 400px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+
+}
+
+label {
+    /* display: block; */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="url"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #9a173c;
+}
+
+span {
+    color: red;
+}
+</style>
 <body>
+    <h1>Feedback Form</h1>
     <div class="container">
-        <h1>Feedback Form</h1>
         <form>
             <div class="form-group">
                 <label for="feedback-type">Feedback Type:</label>
@@ -31,6 +111,7 @@
                     <label for="good">Good</label>
                     <input type="radio" id="average" name="rating" value="average">
                     <label for="average">Average</label>
+                    
                     <input type="radio" id="poor" name="rating" value="poor">
                     <label for="poor">Poor</label>
                 </div>
