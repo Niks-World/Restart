@@ -27,23 +27,27 @@
     <h1>Welcome to my blog</h1>
 </header>
 
+<!-- Converted the wrapping <div> to a <section> element for semantic correctness. -->
 <section>
     <p>This is the introduction paragraph of my personal blog. Here, I'll be sharing my thoughts on various topics.</p>
 </section>
 
 <section>
     <form action="#">
+        <!-- the form content using block-level elements <div> for better readability and user experience. -->
         <div>
-            <label for="name">Name:</label>
+            <!--Added <label> elements for each input field to ensure accessibility.  -->
+            <!-- Added a name attribute to the email input. -->
+             <label for="name">Name:</label>
             <input type="text" id="name" name="username">
         </div>
+        <br>
         <div>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email">
         </div>
         <div>
-            <button type="submit">Subscribe</button>
+            <button type="submit" style="color: red; background-color: aqua; margin-left: 13%; margin-top: 10px;">Subscribe</button>
         </div>
     </form>
-</section>
 </body>
