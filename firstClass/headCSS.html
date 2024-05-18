@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Shapes and Heading</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: red;
+            text-align: center;
+        }
+        .shape-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1px;
+        }
+        .square, .circle {
+            display: inline-block;
+            margin: 0px auto;
+        }
+        .square {
+            width: 100px;
+            height: 100px;
+            /* background-color:  black ; */
+            border: 1px solid rgb(0, 0, 0);
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            /* background-color: black; */
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <div class="shape-container">
+        <div class="circle"></div>
+        <div class="square"></div>
+        
+    </div>
+</body>
+</html>
