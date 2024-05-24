@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Potential</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.career-potential {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.career-potential h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.column {
+    background: #e6e6ff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.column h3 {
+    font-size: 20px;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+.logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logo-grid img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 10px;
+}
+
+.column p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.stats {
+    background: #0099cc;
+    color: white;
+}
+
+.stat-box {
+    background: #00aaff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.stat-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.stat-box p {
+    font-size: 16px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .column {
+        width: 80%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section class="career-potential">
+        <h2>Re-Imagine Your Career Potential</h2>
+        <div class="container">
+            <div class="column">
+                <h3>Enterprises</h3>
+                <div class="logo-grid">
+                    <img src="https://www.masaischool.com/images/new-homepage/outcome/global-logic.png" alt="J.P. Morgan">
+                    <img src="https://www.masaischool.com/images/new-homepage/outcome/jp-morgan.png" alt="Walmart">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1024px-IBM_logo.svg.png" alt="IBM">
+                    <img src="https://www.masaischool.com/images/new-homepage/outcome/hcl.png" alt="HCL">
+                    <img src="https://www.masaischool.com/images/new-homepage/outcome/infosys.png" alt="Infosys">
+                </div>
+                <p>and many more...</p>
+            </div>
+            <div class="column">
+                <h3>Unicorns</h3>
+                <div class="logo-grid">
+                    <img src="https://www.masaischool.com/images/new-homepage/outcome/dream11.png" alt="Dream11">
+                    <img src="https://www.masaischool.com/images/new-homepage/outcome/share-chat.png" alt="ShareChat">
+                    <img src="https://www.masaischool.com/images/new-homepage/outcome/paytm.png" alt="Paytm">
+                    <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/coin_switch_b7e9c752d1.webp" alt="Coinswitch">
+                    <img src="https://www.masaischool.com/images/new-homepage/outcome/swiggy.png" alt="Swiggy">
+                    <img src="https://www.masaischool.com/images/new-homepage/outcome/no-broker.png" alt="NoBroker">
+                </div>
+                <p>and many more...</p>
+            </div>
+            <div class="column stats">
+                <div class="stat-box">
+                    <h3>₹36 LPA</h3>
+                    <p>Highest CTC</p>
+                </div>
+                <div class="stat-box">
+                    <h3>500+</h3>
+                    <p>Students With a CTC of 10 LPA or more</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
