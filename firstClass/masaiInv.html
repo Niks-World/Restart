@@ -7,6 +7,12 @@
 
 </head>
 <style>
+    body{
+        height: 80%;
+        width: 90%;
+        display: grid;
+        margin: auto;
+    }
       *{
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -17,24 +23,29 @@
             border-radius: 5px 5px 5px 5px;
         }
         #banner{
-            border: 1px solid black;
+            /* border: 1px solid black; */
             background-color: rgb(242,246,255);
-            height: 50vw;
-            width: 90%;
+            margin-bottom: 20px;
+           
+            
+        }
+        #banner{
+            /* border: 1px solid black; */
+            width: 80%;
+            justify-content: space-between;
+            align-items: flex-end;
             margin: auto;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px; 
-            flex-direction: row;
-            justify-content: flex-end;
             
         }
         #banner>div{
-            border: 1px solid red;
+            /* border: 1px solid red; */
             width: 100%;
             height: 35vw;
             margin: auto; 
-            margin-top: 10px;
+            margin-top: 50px;
             text-align: center;
             font-size: 12px;
             border-radius: 40px 40px 40px 40px;
@@ -48,13 +59,33 @@
         }
         h3{
             margin-top: 20px;
+            text-align: center;
+        }
+        p{
+            
+        }
+       #btn{
+            border: none;
+            justify-content: center;
+            display: grid;
+            margin-top: 10px;
+            size: 40px;
+            margin-bottom: 20px;
+            /* text-decoration: transparent; */
+          
+
+        }
+        #btn:hover{
+            /* background-color: cadetblue; */
+            color: cadetblue;
+            
         }
 </style>
 <body>
     
-
+    <h1 style="text-align: center;">Masai in News</h1>
     <div id="banner">
-        <h1>Masai in News</h1>
+       
         <div>
             <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/money_Control_c3e25f5ceb.png" height="300px" width="200px" alt="">
             <data style="color: blue;" value="text-align">26 Oct 2021</data>
@@ -84,6 +115,17 @@
         </div>
        
     </div>
-    
+    <div id="btn">
+        <button>See More</button>
+    </div>
+   
+    <h2 style="text-align: center;">Our Investors, Who Believe In Us</h2>
+    <div id="logo">
+        <div>
+            <img src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg" alt="error">
+            <img src="https://www.masaischool.com/images/our-investors/unitus-borderless.svg" alt="error">
+            <img src="https://www.masaischool.com/images/our-investors/omidyar-borderless.svg" alt="error">
+        </div>
+    </div>
 </body>
 </html>
