@@ -6,80 +6,111 @@
     <title>Product Table</title>
 </head>
 <style>
-   table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
+ table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: italic;
+}
+th{
+    background-color:rgb(206,206,206);
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* font-family: italic; */
+
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    /* font-family: 'Times New Roman', Times, serif; */
+
+}
+
+/* Highlight all multiples of 3 */
+tr:nth-child(3n) {
+    font-weight: bold;
+    font-size: large;
+    color: green;
+}
+
+/* Italicize and increase font size for elements at multiple of 4 + 1 position */
+td:nth-child(4n+1) {
+    font-style: italic;
+    font-size: 30px;
+}
+
+tbody tr:last-child {
+    background-color: yellow;
+    
+}
 </style>
 <body>
     <div>
   <table>
-    <tr>
-        <th>Product Name</th>
-        <th>Quantity</th>
-        <th>Price</th>
-    </tr>
-    <tr>
-        <td>Product 1</td>
-        <td> 1</td>
-        <td> 20</td>
-       
-    </tr>
-    <tr>
-        <td>Product 2</td>
-        <td> 2</td>
-        <td> 20</td>
-    </tr>
-    <tr>
-        <td>Product 3</td>
-        <td> 3</td>
-        <td> 20</td>
-    </tr>
-    <tr>
-        <td>Product 4</td>
-        <td> 4</td>
-        <td> 20</td>
-    </tr>
-    <tr>
-        <td>Product 5</td>
-        <td> 5</td>
-        <td> 20</td>
-    </tr>
-    <tr>
-        <td>Product 6</td>
-        <td> 6</td>
-        <td> 20</td>
-    </tr>
-    <tr>
-        <td>Product 7</td>
-        <td> 7</td>
-        <td> 20</td>
-    </tr>
-    <tr>
-        <td>Product 8</td>
-        <td> 8</td>
-        <td> 20</td>
-    </tr>
-    <tr>
-        <td>Product 9</td>
-        <td> 9</td>
-        <td> 20</td>
-    </tr>
-    <tr>
-        <td>Product 10</td>
-        <td> 10</td>
-        <td> 20</td>
-    </tr>
-    <tr>
-        <td colspan="2">Sum</td>
-        <td>$80</td>
-    </tr>
+    <tbody>
+        <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Product 1</td>
+            <td> 1</td>
+            <td> 20</td>
+           
+        </tr>
+        <tr>
+            <td>Product 2</td>
+            <td> 2</td>
+            <td> 20</td>
+        </tr>
+        <tr>
+            <td>Product 3</td>
+            <td> 3</td>
+            <td> 20</td>
+        </tr>
+        <tr>
+            <td>Product 4</td>
+            <td> 4</td>
+            <td> 20</td>
+        </tr>
+        <tr>
+            <td>Product 5</td>
+            <td> 5</td>
+            <td> 20</td>
+        </tr>
+        <tr>
+            <td>Product 6</td>
+            <td> 6</td>
+            <td> 20</td>
+        </tr>
+        <tr>
+            <td>Product 7</td>
+            <td> 7</td>
+            <td> 20</td>
+        </tr>
+        <tr>
+            <td>Product 8</td>
+            <td> 8</td>
+            <td> 20</td>
+        </tr>
+        <tr>
+            <td>Product 9</td>
+            <td> 9</td>
+            <td> 20</td>
+        </tr>
+        <tr>
+            <td>Product 10</td>
+            <td> 10</td>
+            <td> 20</td>
+        </tr>
+        <tr>
+            <td colspan="2">Sum</td>
+            <td>$80</td>
+        </tr>
+    </tbody>
+   
   </table>
     </div>
 </body>
