@@ -55,11 +55,13 @@ h1 {
     background-color: green;
 }
 
-/* When a card is hovered, reduce opacity of other cards */
-.card:hover:not(:hover){
-    opacity: 0.8;
+.card:hover {
+    opacity: 1;
 }
 
+.container:hover .card:not(:hover) {
+    opacity: 0.3; /* Fade out non-hovered cards */
+}
 </style>
 <body>
     <h1>CARDS</h1>
