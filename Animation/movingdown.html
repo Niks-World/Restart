@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+text-align: center;
+color :
+orange;
+transition: color 2s;
+    }
+h1:hover{
+color : red
+}
+
+
+div#box{
+width : 100px;
+height: 100px;
+margin: 200px;
+border-radius: 50%;
+border: 2px solid red;
+transition: transform 2s,border-radius 2s;
+animation: a1 2s infinite;
+background-color: black;
+
+
+
+}
+/* div#box:hover{
+
+transform: translateY(200px) scale(2) rotate(360deg);/*kewX(45deg)*/
+/* border-radius: 50%; */
+
+/* } */ 
+@keyframes a1 {
+    30%{
+        border-radius: 50%;
+        background-color: aqua;
+        transform: translateY(400px);
+    }
+    50%{
+        border-radius: 50%;
+        background-color: rgb(57, 19, 100);
+    }
+    70%{
+        border-radius: 50%;
+        background-color: rgb(163, 28, 71);
+    }
+    100%{
+        border-radius: 50%;
+        background-color: rgb(196, 127, 23);
+        /* scale: 2; */
+        transform: translateX(350px,400px) scale(2);
+    }
+
+}
+</style>
+<body>
+    <h1>Hello</h1>
+    <div id="box"></div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors and Combinators</title>
+    <style>
+        h1 {
+            color: darkblue;
+        }
+        
+        .highlight {
+            background-color: yellow;
+        }
+        
+        #main {
+            padding: 20px;
+            border: 1px solid black;
+        }
+        
+        [type="button"] {
+            background-color: lightgrey;
+        }
+        
+        div p {
+            color: green;
+        }
+        
+        div > p {
+            font-weight: bold;
+        }
+        
+        h1 + p {
+            color: red;
+        }
+        
+        h1 ~ p {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p>First paragraph (adjacent sibling of h1).</p>
+    <p>Second paragraph (general sibling of h1).</p>
+    <div id="main">
+        <p>Paragraph inside a div (child of div).</p>
+        <p class="highlight">Another paragraph inside a div (child of div with class).</p>
+        <input type="button" value="Click Me">
+    </div>
+</body>
+</html>

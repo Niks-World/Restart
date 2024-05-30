@@ -1,0 +1,8 @@
+h2 {
+  color: black;
+}
+
+#container div > p {
+  text-align: center;
+  border: 1px solid 0;
+}/*# sourceMappingURL=style.css.map */
