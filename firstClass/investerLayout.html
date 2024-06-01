@@ -59,8 +59,50 @@
             margin: auto;
             border-radius: 5px 5px 0px 0px;
         }
+/* laptop screen */
+        @media only screen and (min-width: 742px) and (max-width: 1237px) {
+            #logo>div{
+            /* border: 1px solid red; */
+            width: 100%;
+            margin: auto;
+            /* text-align: justify; */
+            /* flex-direction: column; */
+        } 
+        #banner>div{
+            /* border: 1px solid red; */
+            width: 100%;
+            margin: auto; 
+            text-align: center;
+            font-size: 12px;
+            border-radius: 5px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+              
+        }
+        #banner>div>img{
+            /* border: 1px solid red; */
+            width: 100%;
+            margin: auto;
+            border-radius: 5px 5px 0px 0px;
+        }
 
-        @media only screen and (min-width: 421px) and (max-width: 720px) {
+        #logo>div>img{
+            /* border: 1px solid red; */
+            width: 80%;
+            margin: auto;
+        }
+
+        #banner{
+            /* border: 1px solid black; */
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px; 
+            
+        }
+        /* tablet screen */
+      }
+      @media only screen and (min-width: 421px) and (max-width: 740px) {
             #logo>div{
             /* border: 1px solid red; */
             width: 70%;
@@ -95,7 +137,7 @@
             width: 80%;
             margin: auto;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 10px; 
             
         }

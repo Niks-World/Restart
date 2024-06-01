@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Visibility</title>
+    <style>
+         body{
+            background-color: black;
+            height: 200vh;
+        }
+        @keyframes big {
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+        #box {
+            width: 50%;
+            height: 70vh;
+            position: absolute;
+            top: 110vh;
+            left: 25%;
+            box-shadow: 3px 3px #ffcc00, -1em 0 .4em #ff6699, 1em 0 4em #ff6699, -1em 0 4em #ff6699;
+            border-radius: 10px; 
+        }
+        #box.box1 {
+            animation: big 5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <!-- Add your content here -->
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var box = document.getElementById('box');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 100) { // Adjust the scroll threshold as needed
+                    box.classList.add("box1");
+                } else {
+                    box.classList.remove("box1");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
