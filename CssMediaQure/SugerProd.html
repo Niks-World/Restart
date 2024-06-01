@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suger Cosmatic</title>
+    <!-- <style>
+        * {
+            background-color: rgb(242, 242, 242);
+            font-family: sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            
+        }
+        .container{
+            /* border: 1px solid red; */
+            margin-left: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+
+        }
+        #card{
+            /* border: 1px solid red; */
+            width: 240px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 10px;
+            border-radius: 20px;
+
+        }
+        #card>#offer>#icon{
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 306px;
+            left: 228px;
+            bottom: 40px;
+        }
+        h3{
+         /* border: 1px solid red; */
+            width: 120px;
+            position: relative;
+            left: 70px;
+        }
+        #offer{
+            margin-top: 5px;
+            border: 2px solid red;
+            border-style: dotted;
+
+                       
+        }
+        #card>img{
+         /* border: 1px solid red; */
+         border-radius: 20px;
+
+        }
+
+       
+    </style> -->
+
+<style>
+   
+* {
+    background-color: rgb(242, 242, 242);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#card {
+    /* border: 1px solid red; */
+    width: 270px;
+    height: 270px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+h3 {
+    width: 120px;
+    position: relative;
+    left: 70px;
+    color: crimson;
+}
+
+#offer {
+    margin-top: 15px;
+    border: 2px solid red;
+    border-style: dashed;
+    height: 35px;
+}
+
+#card>img {
+    border-radius: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 180px) {
+    .container {
+        grid-template-columns:repeat(1, 1fr) ;
+        /* display: grid; */
+        /* gap: 25px; */
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+}
+#icon{
+    border: 2px solid red;
+    padding-left: 2%;
+    border-style: dashed;
+    position: sticky;
+    position: absolute;
+    
+}
+</style>
+</head>
+
+<body>
+    <h2>——— OFFERS ——— </h2> 
+    <div class="container">
+        <div id="card">
+        
+                <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/acad85ca-903b-44f2-b504-a70a3e0c8325.jpg" height="200px" alt="">
+               <div id="offer">
+                <h3>PAYDAY 300 &nbsp;
+                 <img id="icon" src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="">
+
+                </h3>
+                <!-- <img id="icon" src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt=""> -->
+           
+               </div>
+    
+        </div>
+
+        <div id="card">
+        
+            <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/acad85ca-903b-44f2-b504-a70a3e0c8325.jpg" height="200px" alt="">
+           <div id="offer">
+            <h3>PAYDAY 300 &nbsp;
+                <img id="icon" src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="">
+
+               </h3>
+           </div>
+
+    </div>
+
+    <div id="card">
+        
+        <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/acad85ca-903b-44f2-b504-a70a3e0c8325.jpg" height="200px" alt="">
+       <div id="offer">
+        <h3>PAYDAY 300 &nbsp;
+            <img id="icon" src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="">
+
+           </h3>
+       </div>
+
+</div>
+
+<div id="card">
+        
+    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/acad85ca-903b-44f2-b504-a70a3e0c8325.jpg" height="200px" alt="">
+   <div id="offer">
+    <h3>PAYDAY 300 &nbsp;
+        <img id="icon" src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="">
+
+       </h3>
+   </div>
+
+</div>
+
+<div id="card">
+        
+    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/acad85ca-903b-44f2-b504-a70a3e0c8325.jpg" height="200px" alt="">
+   <div id="offer">
+    <h3>PAYDAY 300 &nbsp;
+        <img id="icon" src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="">
+
+       </h3>
+   </div>
+
+</div>
+
+<div id="card">
+        
+    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/acad85ca-903b-44f2-b504-a70a3e0c8325.jpg" height="200px" alt="">
+   <div id="offer">
+    <h3>PAYDAY 300 &nbsp;
+        <img id="icon" src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="">
+
+       </h3>
+   </div>
+
+</div>
+<div id="card">
+        
+    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/acad85ca-903b-44f2-b504-a70a3e0c8325.jpg" height="200px" alt="">
+   <div id="offer">
+    <h3>PAYDAY 300 &nbsp;
+        <img id="icon" src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="">
+
+       </h3>
+   </div>
+
+</div>
+
+<div id="card">
+        
+    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/acad85ca-903b-44f2-b504-a70a3e0c8325.jpg" height="200px" alt="">
+   <div id="offer">
+    <h3>PAYDAY 300 &nbsp;
+        <img id="icon" src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="">
+
+       </h3>
+   </div>
+
+</div>
+<div id="card">
+        
+    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/acad85ca-903b-44f2-b504-a70a3e0c8325.jpg" height="200px" alt="">
+   <div id="offer">
+    <h3>PAYDAY 300 &nbsp;
+        <img id="icon" src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="">
+
+       </h3>
+   </div>
+
+</div>
+
+
+<div id="card">
+        
+    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/acad85ca-903b-44f2-b504-a70a3e0c8325.jpg" height="200px" alt="">
+   <div id="offer">
+    <h3>PAYDAY 300 &nbsp;
+        <img id="icon" src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="">
+
+       </h3>
+   </div>
+
+</div>
+
+<div id="card">
+        
+    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/acad85ca-903b-44f2-b504-a70a3e0c8325.jpg" height="200px" alt="">
+   <div id="offer">
+    <h3>PAYDAY 300 &nbsp;
+        <img id="icon" src="https://in.sugarcosmetics.com/desc-images/copyIconBlack.png" alt="">
+
+       </h3>
+   </div>
+
+</div>
+
+        
+    </div>
+    
+</body>
+
+</html>
