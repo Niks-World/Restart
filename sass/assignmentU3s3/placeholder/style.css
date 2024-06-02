@@ -1,0 +1,16 @@
+.warning-card, .info-card {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-card {
+  background-color: #eaf6ff;
+  border: 1px solid #3498db;
+}
+
+.warning-card {
+  background-color: #fdf2e9;
+  border: 1px solid #e74c3c;
+}/*# sourceMappingURL=style.css.map */
