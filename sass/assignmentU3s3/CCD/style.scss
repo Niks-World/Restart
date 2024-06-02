@@ -1,0 +1,62 @@
+
+// main.scss
+
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'store-locator';
+@import 'footer';
+
+body {
+    font-family: $font-family;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.hero {
+    text-align: center;
+    position: relative;
+    .hero-img {
+        width: 100%;
+        height: auto;
+    }
+    .hero-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $background-color;
+        font-size: 2rem;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+        border-radius: $border-radius;
+    }
+}
+
+.talk-to-us {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    .talk-to-us-button {
+        @include button-styles;
+        background-color: $primary-color;
+        color: $background-color;
+    }
+    .talk-to-us-form {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        textarea {
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+            border: none;
+        }
+        .talk-to-us-submit {
+            @include button-styles;
+            background-color: $primary
+        }
+    }
+}

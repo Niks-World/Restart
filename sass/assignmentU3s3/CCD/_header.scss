@@ -1,0 +1,26 @@
+// _header.scss
+
+.header {
+    background-color: $primary-color;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: $padding;
+    }
+    .logo {
+        height: 50px;
+    }
+    .nav {
+        display: flex;
+        gap: 20px;
+        a {
+            color: $background-color;
+            text-decoration: none;
+            font-family: $font-family;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

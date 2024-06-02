@@ -1,0 +1,20 @@
+// _store-locator.scss
+
+.store-locator {
+    background-color: $primary-color;
+    color: $background-color;
+    text-align: center;
+    padding: $padding;
+    .store-locator-button {
+        @include button-styles;
+        background-color: lighten($primary-color, 10%);
+        color: $background-color;
+    }
+    .store-locator-input {
+        width: 100%;
+        padding: $padding;
+        border: none;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+    }
+}

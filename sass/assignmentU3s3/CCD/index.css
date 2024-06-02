@@ -1,0 +1,208 @@
+/* main.css */
+
+:root {
+    --primary-color: #ff0000;
+    --secondary-color: #333333;
+    --background-color: #ffffff;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --padding: 20px;
+    --border-radius: 5px;
+    --font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: var(--primary-color);
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding);
+}
+
+.header .logo {
+    height: 50px;
+}
+
+.header .nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header .nav a {
+    color: var(--background-color);
+    text-decoration: none;
+    font-family: var(--font-family);
+}
+
+.header .nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    position: relative;
+}
+
+.hero .hero-img {
+    width: 100%;
+    height: auto;
+}
+
+/* .hero .hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--background-color);
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+} */
+
+.store-locator {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: var(--padding);
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+}
+
+.store-locator .store-locator-title {
+    font-size: 1.5rem;
+}
+
+.store-locator .store-locator-description {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.store-locator .store-locator-button {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    background-color: #ff6666;
+    color: var(--background-color);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    font-family: var(--font-family);
+}
+
+.store-locator .store-locator-button:hover {
+    background-color: #ff8080;
+}
+
+.store-locator .store-locator-note {
+    margin: 10px 0;
+}
+
+.store-locator .store-locator-input {
+    width: 9%;
+    padding: var(--padding);
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    padding: var(--padding);
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer .social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer .quick-links, .footer .menu, .footer .shop, .footer .business {
+    flex: 1;
+}
+
+.footer h3 {
+    font-family: var(--font-family);
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: var(--background-color);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-note {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.875rem;
+}
+
+.talk-to-us {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.talk-to-us .talk-to-us-button {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    font-family: var(--font-family);
+}
+
+.talk-to-us .talk-to-us-form {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.talk-to-us .talk-to-us-form textarea {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border: none;
+}
+
+.talk-to-us .talk-to-us-submit {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    font-family: var(--font-family);
+}
+
+.talk-to-us .talk-to-us-submit:hover {
+    background-color: #ff6666;
+}

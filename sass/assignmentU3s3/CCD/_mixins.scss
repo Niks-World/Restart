@@ -1,0 +1,16 @@
+// _mixins.scss
+
+@mixin button-styles {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+    font-family: $font-family;
+    &:hover {
+        background-color: lighten($primary-color, 10%);
+    }
+}

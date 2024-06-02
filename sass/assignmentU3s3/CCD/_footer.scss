@@ -1,0 +1,32 @@
+// _footer.scss
+
+.footer {
+    background-color: $secondary-color;
+    color: $background-color;
+    padding: $padding;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .social {
+        display: flex;
+        gap: 10px;
+    }
+    .quick-links, .menu, .shop, .business {
+        flex: 1;
+    }
+    h3 {
+        font-family: $font-family;
+        margin-bottom: 10px;
+    }
+    a {
+        color: $background-color;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 5px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
