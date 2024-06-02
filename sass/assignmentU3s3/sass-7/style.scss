@@ -1,0 +1,14 @@
+// Step 1: Define the double function
+@function double($number) {
+    @return $number * 2;
+  }
+  
+  // Step 2: Define the base width variable
+  $base-width: 100px;
+  
+  // Step 3: Use the double function to set the width of the .double-width class
+  .double-width {
+    width: double($base-width);
+  }
+  
+  
