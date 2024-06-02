@@ -1,0 +1,10 @@
+// Define mixin
+@mixin border-radius($radius) {
+    border-radius: $radius;
+  }
+  
+  // Use mixin to create .rounded class
+  .rounded {
+    @include border-radius(15px);
+  }
+  
