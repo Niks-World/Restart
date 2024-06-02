@@ -1,0 +1,31 @@
+// Define the theme colors using a Sass map
+$theme-colors: (
+  primary: #007bff,
+  secondary: #6c757d,
+  tertiary: #28a745
+);
+
+// Mixin to apply the background color based on the key from the theme colors map
+@mixin apply-theme-color($color-key) {
+  background-color: map-get($theme-colors, $color-key);
+}
+
+// Example usage of the mixin
+.primary-background {
+  @include apply-theme-color(primary);
+}
+
+.secondary-background {
+  @include apply-theme-color(secondary);
+}
+
+.tertiary-background {
+  @include apply-theme-color(tertiary);
+}
+
+// Loop to generate margin classes
+@for $i from 1 through 5 {
+  .margin-#{$i} {
+    margin: #{$i * 10}px;
+  }
+}
