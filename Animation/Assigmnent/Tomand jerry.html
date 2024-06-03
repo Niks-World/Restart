@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom and Jerry </title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background: #89021f;
+         
+        }
+        .card{
+            width: 250px;
+            height: 420px;
+            position: absolute;
+            top: 80px;
+            background-size: cover;
+        }
+        @keyframes ltr{
+            25%{
+                filter: blur(2px);
+            }
+            50%{
+                transform: translate(250px);
+            }
+         
+        }
+        @keyframes rtl {
+            25%{
+                
+            }
+            50%{
+                transform: translate(-50px);
+              
+            }
+          
+           
+        }
+        #tom{
+            background-image: url("https://pngimg.com/d/tom_and_jerry_PNG58.png");
+            left: 20vw;
+            
+            animation: ltr 6s infinite;
+        }
+        #jerry{
+            background-image: url("https://i.pinimg.com/originals/03/a4/d5/03a4d55748dfefa852df76b085708c0a.png");
+            left: 60vw;
+            animation: rtl 6s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="card" id="tom"></div>
+    <div class="card" id="jerry"></div>
+</body>
+</html>
