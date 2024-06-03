@@ -5,28 +5,27 @@
 
 
 
- #container{
+#container {
     display: flex;
     /* border: 2px solid red; */
 
-width: 1440px;
-height: 40pxpx;
-top: 70px;
-justify-content: space-around;
-gap: 0px;
-border: 0.5px 0px 0px 0px;
-opacity: 0px;
-border: 0.5px solid #D4D4D4
-
-
- } 
-nav {
-    display: flex;
- 
-    background: #FFFFFF; 
+    width: 1440px;
+    height: 40pxpx;
+    top: 70px;
+    justify-content: space-around;
+    gap: 0px;
+    border: 0.5px 0px 0px 0px;
+    opacity: 0px;
+    border: 0.5px solid #D4D4D4
 }
 
- /* #container>#navlogo {
+nav {
+    display: flex;
+
+    background: #FFFFFF;
+}
+
+/* #container>#navlogo {
     width: 169px;
     border: 1px soild red;
     height: 43px;
@@ -57,12 +56,12 @@ nav {
     height: 38.93px;
     top: 14px;
     /* left: 100px; */
-    /* gap: 0px; */
-    /* border-radius: 3px 0px 0px 0px; */
-    /* opacity: 0.8px; */
-    /* background: #7757F4; */
-    /* position: relative; */
-    /* left: 0px; */
+/* gap: 0px; */
+/* border-radius: 3px 0px 0px 0px; */
+/* opacity: 0.8px; */
+/* background: #7757F4; */
+/* position: relative; */
+/* left: 0px; */
 
 /* } */
 
@@ -92,24 +91,26 @@ nav {
     opacity: 0px;
     gap: 10px;
 
-} 
-#navbtn>button:nth-child(1){
+}
+
+#navbtn>button:nth-child(1) {
     height: 44px;
     width: 92px;
-    background: rgba(255, 255, 255, 1);
-    border: 1px  rgba(119, 87, 244, 1)
-    border-radius:8px;
+    /* background: rgba(255, 255, 255, 1); */
+    border: 1px rgba(119, 87, 244, 1);
+    border-radius: 8px;
+    padding-right: 10px;
+}
 
-} 
-#navbtn>button:nth-child(2){
+#navbtn>button:nth-child(2) {
     background: rgba(119, 87, 244, 1);
-color: aliceblue;
-border: none;
-border-radius: 8px;
-margin-top: 20px;
-gap: 10px;
-height: 44px;
-width: 144px;
+    color: aliceblue;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    gap: 10px;
+    height: 44px;
+    width: 144px;
 
 }
 
@@ -126,7 +127,7 @@ width: 144px;
 /* first landing page  */
 #landing {
     background: rgba(255, 255, 255, 0.6);
-    
+
 }
 
 #landing>#left>h1 {
@@ -174,7 +175,7 @@ width: 144px;
 
 }
 
-#landing>#right>#font{
+#landing>#right>#font {
     /* border: 1px solid red; */
     width: 140.5px;
     height: 260px;
@@ -192,17 +193,50 @@ width: 144px;
     left: 1200px;
 
 }
-#landing>#right>img{
+
+#landing>#right>img {
     width: 536px;
-height: 370px;
-top: 46.6px;
-left: 105px;
-gap: 0px;
-border-radius: 6px 0px 0px 0px;
-opacity: 0px;
-position: absolute;
-top: 170px;
-left: 800px;
-bottom: 60px;
+    height: 370px;
+    top: 46.6px;
+    left: 105px;
+    gap: 0px;
+    border-radius: 6px 0px 0px 0px;
+    opacity: 0px;
+    position: absolute;
+    top: 170px;
+    left: 800px;
+    bottom: 60px;
+
+}
+
+#landing>#right>#color {
+    border: 1px solid purple;
+    /* grid-template-columns: repeat(5, 1fr); */
+    /* display: grid; */
+    width: 350px;
+    height: 150px;
+    /* top: 251.35px; */
+    gap: 0px;
+    border-radius: 8px;
+    opacity: 0.9px;
+
+
+}
+
+#landing>#right>#color>div>.circle {
+    border: 1px solid red;
+    width: 27.33px;
+    height: 27.27px;
+
+    position: relative;
+    /* top: 40px; */
+    /* right: 20px; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0px;
+    border: 1.79px 0px 0px 0px;
+    opacity: 0px;
+    border-radius: 50%;
+    background-color: purple;
 
 }
