@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+/* #container{
+    display: flex;
+    /* border: 2px solid red; */
+
+/* width: 1440px; */
+/* height: 0px; */
+/* top: 70px; */
+/* gap: 0px; */
+/* border: 0.5px 0px 0px 0px; */
+/* opacity: 0px; */
+/* border: 0.5px solid #D4D4D4 */
+
+
+/* } */
+nav {
+    display: flex;
+    /* width: 90%; */
+    justify-content: flex-end;
+    /* align-items: center; */
+    background: #FFFFFF; 
+    /* grid-template-columns: repeat(3,1fr); */
+}
+
+ #navlogo {
+    width: 169px;
+    height: 43px;
+    top: 14px;
+    left: 100px;
+    gap: 0px;
+    border-radius: 3px 0px 0px 0px;
+    opacity: 0px;
+
+}
+
+#navlogo>h1 {
+    width: 115.74px;
+    height: 34.89px;
+    top: 19.84px;
+    left: 153.26px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: SF Pro Display;
+    font-size: 23.43px;
+    font-weight: 700;
+    line-height: 35.15px;
+    text-align: left;
+
+}
+/*
+.navbox {
+    width: 32.47px;
+    height: 38.93px;
+    top: 14px;
+    left: 100px;
+    gap: 0px;
+    border-radius: 3px 0px 0px 0px;
+    opacity: 0.8px;
+    background: #7757F4;
+    position: relative;
+    left: 10px;
+
+}
+
+.navbox1 {
+    width: 29.93px;
+    height: 36.28px;
+    top: 14.22px;
+    left: 121.77px;
+    gap: 0px;
+    border-radius: 3px 0px 0px 0px;
+    opacity: 0.5px;
+    angle: -14.99 deg;
+    background: #EBE6FD;
+
+
+}
+
+#navbtn {
+    width: Hug (92px)px;
+    height: Hug (44px)px;
+    top: 13px;
+    left: 1048px;
+    padding: var(--25) var(--5) var(--25) var(--5);
+    gap: var(--2);
+    border-radius: var(--rounded-lg);
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+} */
+
+#linenav {
+    width: 1440px;
+    height: 0px;
+    top: 70px;
+    gap: 0px;
+    border: 0.5px 0px 0px 0px;
+    opacity: 0px;
+    border: 0.5px solid #D4D4D4
+}
+
+/* first landing page  */
+#landing {
+    background: rgba(255, 255, 255, 0.6);
+    
+}
+
+#landing>#left>h1 {
+    /* border: 1px solid red; */
+
+    width: 549.15px;
+    height: 175.56px;
+    top: 232px;
+    left: 85px;
+    gap: 0px;
+    opacity: 0px;
+
+    font-family: Open Sans;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6px;
+    text-align: left;
+
+
+}
+
+#landing>#left>h1>span {
+    font-family: Open Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: left;
+    color: rgba(119, 87, 244, 1);
+}
+
+#landing>#left>button {
+
+    width: 165px;
+    height: 55.69px;
+    top: 458.01px;
+    left: 80px;
+    gap: 0px;
+
+    border: none;
+    border-radius: 8px;
+    opacity: 0px;
+    background: rgba(119, 87, 244, 1);
+    color: var(--white, rgba(255, 255, 255, 1));
+
+
+}
+
+#landing>#right>#font{
+    /* border: 1px solid red; */
+    width: 140.5px;
+    height: 260px;
+    padding-left: 10px;
+    left: 577.54px;
+    gap: 0px;
+    border-radius: 8px;
+    opacity: 0px;
+    background: rgba(255, 255, 255, 1);
+
+    box-shadow: 4.15px 4.15px 16.6px 0px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 110px;
+    right: 0px;
+    left: 1200px;
+
+}
+#landing>#right>img{
+    width: 536px;
+height: 370px;
+top: 46.6px;
+left: 105px;
+gap: 0px;
+border-radius: 6px 0px 0px 0px;
+opacity: 0px;
+position: absolute;
+top: 170px;
+left: 800px;
+bottom: 60px;
+
+}
