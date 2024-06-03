@@ -5,45 +5,41 @@
 
 
 
-/* #container{
+ #container{
     display: flex;
     /* border: 2px solid red; */
 
-/* width: 1440px; */
-/* height: 0px; */
-/* top: 70px; */
-/* gap: 0px; */
-/* border: 0.5px 0px 0px 0px; */
-/* opacity: 0px; */
-/* border: 0.5px solid #D4D4D4 */
+width: 1440px;
+height: 40pxpx;
+top: 70px;
+justify-content: space-around;
+gap: 0px;
+border: 0.5px 0px 0px 0px;
+opacity: 0px;
+border: 0.5px solid #D4D4D4
 
 
-/* } */
+ } 
 nav {
     display: flex;
-    /* width: 90%; */
-    justify-content: flex-end;
-    /* align-items: center; */
+ 
     background: #FFFFFF; 
-    /* grid-template-columns: repeat(3,1fr); */
 }
 
- #navlogo {
+ /* #container>#navlogo {
     width: 169px;
+    border: 1px soild red;
     height: 43px;
-    top: 14px;
-    left: 100px;
+   
     gap: 0px;
     border-radius: 3px 0px 0px 0px;
     opacity: 0px;
 
-}
+} */
 
-#navlogo>h1 {
-    width: 115.74px;
+/* #navlogo>h1 {
     height: 34.89px;
-    top: 19.84px;
-    left: 153.26px;
+  
     gap: 0px;
     opacity: 0px;
     font-family: SF Pro Display;
@@ -51,24 +47,26 @@ nav {
     font-weight: 700;
     line-height: 35.15px;
     text-align: left;
+    position: absolute;
+    
 
-}
-/*
-.navbox {
+} */
+
+/* .navbox {
     width: 32.47px;
     height: 38.93px;
     top: 14px;
-    left: 100px;
-    gap: 0px;
-    border-radius: 3px 0px 0px 0px;
-    opacity: 0.8px;
-    background: #7757F4;
-    position: relative;
-    left: 10px;
+    /* left: 100px; */
+    /* gap: 0px; */
+    /* border-radius: 3px 0px 0px 0px; */
+    /* opacity: 0.8px; */
+    /* background: #7757F4; */
+    /* position: relative; */
+    /* left: 0px; */
 
-}
+/* } */
 
-.navbox1 {
+/* .navbox1 {
     width: 29.93px;
     height: 36.28px;
     top: 14.22px;
@@ -80,7 +78,7 @@ nav {
     background: #EBE6FD;
 
 
-}
+} */
 
 #navbtn {
     width: Hug (92px)px;
@@ -92,8 +90,28 @@ nav {
     border-radius: var(--rounded-lg);
     border: 1px 0px 0px 0px;
     opacity: 0px;
+    gap: 10px;
 
-} */
+} 
+#navbtn>button:nth-child(1){
+    height: 44px;
+    width: 92px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px  rgba(119, 87, 244, 1)
+    border-radius:8px;
+
+} 
+#navbtn>button:nth-child(2){
+    background: rgba(119, 87, 244, 1);
+color: aliceblue;
+border: none;
+border-radius: 8px;
+margin-top: 20px;
+gap: 10px;
+height: 44px;
+width: 144px;
+
+}
 
 #linenav {
     width: 1440px;
