@@ -228,7 +228,7 @@ nav {
 }
 
 #landing>#right>#color>.circle {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 27.33px;
     height: 27.27px;
 
@@ -246,7 +246,7 @@ nav {
 }
 
 /* banner 2 */
-#banner2right{
+#banner2right {
     background: rgba(255, 255, 255, 1);
     width: 450px;
     height: 460px;
@@ -258,9 +258,51 @@ nav {
     opacity: 0px;
     /* border: 1px solid red;    */
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-   
+
     /* margin: right px; ; */
     padding-top: 10px;
-    padding-left:  30px; ;
+    padding-left: 30px;
+    ;
     position: relative;
+}
+
+#banner2left>div {
+    /* border: 1px solid red; */
+    position: absolute;
+    width: 615px;
+    height: 389px;
+    top: 800px;
+    left: 100px;
+    bottom: px;
+    gap: 0px;
+    opacity: 0px;
+
+
+    /* position: absolute;
+    bottom: px; */
+    background: rgba(255, 255, 255, 0.01);
+
+}
+#banner2left>div>img{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+#banner2left>div>img:nth-child(1) {
+    width: 130px;
+    height: 185px;
+    top: 960px;
+    left: 124px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+#banner2left>div>img:nth-child(2) {
+    width: 223px;
+    height: 317px;
+    top: 901px;
+    left: 264px;
+    gap: 0px;
+    opacity: 0px;
+
 }
