@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .box{
+            margin-top: 10%;
+            margin-left: 50%;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: medium;
+
+            transition: transform 1s ease;
+        }
+        .box:hover{
+            transform: rotate(360deg )
+            /* translate(80px , 80px) ; */
+            scale(2)
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Transform Me!</div>
+</body>
+</html>
