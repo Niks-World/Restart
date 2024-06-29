@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="empty-container">
+
+    </div>
+
+    <div id="container">
+        <div  class="child-container">
+            <h2>heading1</h2>
+            <h2>heading2</h2>
+            <h2>heading3</h2>
+        </div>
+        <div class="child-container">
+            <h3>heading1</h3>
+            <h3>heading2</h3>
+            <h3>heading3</h3>
+        </div>
+    </div>
+    
+</body>
+
+
+<script>
+
+    // console.log(document.getElementById("container"))
+    // console.log(document.getElementById("child-container-1"))
+
+//     let container = document.getElementsByClassName("child-container")
+//     // console.log( container[0])
+//     // console.log(container[1])
+//     for(let i = 0 ; i<container.length ; i++){
+         
+//         container[i].style.color = i%2==0 ? "red" : "blue"
+       
+//     }
+//     // HTML Collection => can't use array methods on this
+
+//     // if(2%2 == 0){
+//     //     console.log("even")
+//     // }else{
+//     //     console.log("odd")
+//     // }
+//   // if i is even we need other color in the container
+//     2%2==0 ? console.log("even") : console.log('odd') 
+
+
+// querySelector
+
+// let container  =   document.querySelector("#container")
+
+// // console.log(container)
+
+// let childs = document.querySelectorAll(".child-container")
+// console.log(childs)
+// childs.forEach((ele)=>{
+//     ele.style.color = "red"
+// })
+
+
+// Accessing DOM
+
+// - document.getElementById() // 1 ele
+// - document.getElementsByClassName() // many => HTML COllectiong => collection don't work with array methods
+
+
+// - document.querySelector() // 1 ele // or very first element
+// - document.querySelectorAll() // many => nodelist => this can use array methods
+
+// Creating Elements in DOM 
+
+let emptyContainer = document.querySelector('#empty-container')
+
+let childContainer2 = document.querySelectorAll('#container > div ')
+
+let heading = document.createElement('h1')
+heading.innerHTML = "Hello World"
+childContainer2[1].append(heading)
+
+// console.log(childContainer2)
+
+
+  
+</script>
+</html>
+
+<!-- <div>
+
+    <h1>Hello world</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+</div> -->

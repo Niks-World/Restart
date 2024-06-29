@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="display-page">Display Page</button>
+    <form>
+        <input  placeholder="country name">
+        <input type="number" placeholder="country population" >
+        <input type="number" placeholder="country emission" >
+        <input type="submit">
+    </form> 
+    
+</body>
+
+<script>
+    let form = document.querySelector("form")
+    let displayPage = document.getElementById("display-page")
+
+
+let CarbonFootPrint = [
+
+{
+    country : "India" , 
+    population : 10 , 
+    emission : 5
+},
+{
+    country : "USA" , 
+    population : 7 , 
+    emission : 7
+},
+{
+    country : "Canada" , 
+    population : 2 , 
+    emission : 1
+},
+{
+    country : "China" , 
+    population : 14 , 
+    emission : 8
+},
+{
+    country : "England" , 
+    population : 2 , 
+    emission : 2
+},
+{
+    country : "Spain" , 
+    population : 6 , 
+    emission : 2
+},
+{
+    country : "Australia" , 
+    population : 5 , 
+    emission : 3
+},
+{
+    country : "Belgium" , 
+    population : 8 , 
+    emission : 6
+},
+
+]
+
+let data = JSON.parse(localStorage.getItem("data"))
+
+function saveData(arr){
+    localStorage.setItem("data" , JSON.stringify(arr))
+
+    let data = JSON.parse(localStorage.getItem("data"))
+    showData(data)
+}
+
+function handleForm(e){
+    // e = event
+    // event = {
+    //     target : ['input1' , 'input2']
+    // }
+    e.preventDefault()
+
+    let country = e.target[0].value  // ""
+    let  population = e.target[1].value
+    let  emission = e.target[2].value
+
+    if(country && population && emission){
+        let obj = {
+        country ,
+        population ,
+        emission 
+        }
+        data.push(obj)
+      
+        form[0].value = ""
+        form[1].value = ""
+        form[2].value = ""
+
+        saveData(data)
+        
+    }
+}
+
+
+form.addEventListener("submit" , (event)=>{handleForm(event)})
+displayPage.addEventListener("click" , ()=>{
+    window.location.href = "index.html"
+})
+</script>
+</html>

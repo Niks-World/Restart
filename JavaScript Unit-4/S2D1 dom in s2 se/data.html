@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            width: 70%;
+            gap: 20px;
+        }
+
+        #container>div>img{
+            width: 100%;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <input id="title" placeholder="Product Title" >
+        <input placeholder="Product's image url">
+        <input placeholder="Product's Price">
+        <input  type="submit" >
+    </form>
+
+    <button id="sort">Sort asc by price</button>
+    <!-- <button id="clicked">Click</button> -->
+    <div id="container">
+
+    </div>
+    
+</body>
+
+<script>
+    let data = [
+
+      {
+        product : "mobile" , 
+        url : "https://rukminim2.flixcart.com/image/612/612/xif0q/mobile/n/w/e/-original-imagtyw9fdfnsune.jpeg?q=70" , 
+        price : 10000
+      } , 
+      {
+        product : "tv" , 
+        url : "https://rukminim2.flixcart.com/image/312/312/xif0q/television/o/j/s/32rt1022-thomson-original-imagpu4vshz5gsgm.jpeg?q=70",
+        price : 30000
+      } , 
+      {
+        product : "mobile-two" , 
+        url : "https://rukminim2.flixcart.com/image/612/612/xif0q/mobile/n/w/e/-original-imagtyw9fdfnsune.jpeg?q=70" , 
+        price : 60000
+      } , 
+      {
+        product : "tv-two" , 
+        url : "https://rukminim2.flixcart.com/image/312/312/xif0q/television/o/j/s/32rt1022-thomson-original-imagpu4vshz5gsgm.jpeg?q=70",
+        price : 10000
+      }, 
+      {
+        product : "mobile-three" , 
+        url : "https://rukminim2.flixcart.com/image/612/612/xif0q/mobile/n/w/e/-original-imagtyw9fdfnsune.jpeg?q=70" , 
+        price : 15000
+      } , 
+      {
+        product : "tv-three" , 
+        url : "https://rukminim2.flixcart.com/image/312/312/xif0q/television/o/j/s/32rt1022-thomson-original-imagpu4vshz5gsgm.jpeg?q=70",
+        price : 1000000
+      }
+    ]
+
+    let container = document.querySelector('#container')
+
+
+    // btn.addEventListener(event , callback function)
+    // btn.addEventListener('click' , handleSubmit )
+
+
+    function showData(arr){
+        // console.log(container.innerHTML)
+        container.innerHTML = ""
+        
+        arr.forEach(((ele)=>{
+        let card = document.createElement("div")
+
+        let h3 = document.createElement("h3")
+        h3.innerHTML = ele.product
+
+        let img = document.createElement("img")
+        img.src = ele.url
+
+        // <img style="" src="" >
+
+        let p = document.createElement("p")
+        p.innerHTML = `<b>Price :</b> ${ele.price}`
+
+        // <p><b>Price : </b> actual price </p>
+
+        card.append(h3 , p, img)
+        container.append(card)
+    }))
+    }
+
+    function handleSubmit(event){
+
+        event.preventDefault()
+        let product = event.target[0].value
+        let url  = event.target[1].value
+        let price = event.target[2].value
+
+        let obj = {
+            product ,// product : product
+            url ,   // url : url
+            price // price : price
+        }
+
+        data.push(obj)
+        // target => form => 4 childs
+        // target[0] => 1st childs
+        // target[1] => 2nd child
+
+        showData(data)
+    }
+
+    function handleSortClick(){
+
+        let narr = data.sort((a,b)=>b.price - a.price)
+
+        showData(narr)
+    }
+
+
+    let form = document.querySelector("form")
+
+    let sortButton = document.querySelector("#sort")
+
+    form.addEventListener("submit" , (event)=>{handleSubmit(event)})
+    sortButton.addEventListener("click" , handleSortClick)
+
+    // form refreshes the page as soon as it gets submit
+
+    showData(data)
+// why have we use forEach here rather than map
+</script>
+</html>
+
+

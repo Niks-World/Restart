@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+// {
+//     var i = 0 ; 
+// }
+// console.log(i)
+
+
+// {
+//     let j  = 0 ; 
+// }
+// console.log(j)
+
+// var a ; // implicitly // undefined
+
+// console.log(a)
+
+
+// console.log(str) // undefined
+
+
+// var str = "masai"
+
+// for(var i = 0  ; i<5 ; i++){
+
+// }
+
+// console.log(i)  // 4   // 5  // undefined  // 5
+ 
+
+// for(let j = 0 ; j<5 ; j++){
+
+// }
+
+// console.log(j) // undefined  // not defined // not defined // 5
+
+// scoping issue => var => global   and   let , const => local
+
+// 0 , 0  // 4
+// 0 , undefined // 6
+// 0 , not defined //2
+
+// var a = 20 
+
+// var b = "25"
+
+
+// function add(a,b){
+//     var c = 5
+
+//     return a+b+c
+// }
+
+
+// let value = add(a,b)
+
+
+// console.log(value)
+
+
+
+// {
+
+// }
+
+
+// {
+//     let j = 0 
+   
+
+//     function add(){
+//         console.log(j)
+//     }
+
+//     add()
+// }
+
+// // lexographical scopes 
+
+// console.log(j)
+
+// var apple = "apples"
+
+// function applePrinter (){
+//     var orange = "oranges"
+//     return "apple"
+// }
+// applePrinter()
+// console.log(apple)
+//  console.log(orange) // "oranges"
+
+
+//  console.log(applePrinter())
+
+ // orange is not accessible because it's part of functional scope , and as soon as the FEC , get's destroyed
+ // that scope with the variables will be destroyed.
+
+
+// creation phase => attendence of each and every variable ("var") and functions is taken in this phase
+
+
+// let a = 10
+
+// let b = 20
+
+
+// function add(x,y){
+//    return x,y
+// }
+
+// let value = add(a,b)
+
+
+// console.log(value)
+
+// function greet(str){
+// let greeting = "good morning"
+
+//   return str + greeting
+
+// }
+
+
+// function fullName(first , last){
+//   let fullname = first+last
+
+//   return greet(fullname)
+// }
+
+
+// console.log(fullName("virat" , 'kohli'))  // viratkohligood morning
+
+
+// function navabarLoad(){
+//     console.log("navbar loaded")
+// }
+
+
+// function dataFetch(){
+//     let data = [
+//         {a:1} , 
+//         {b:2}
+//     ]
+
+//     console.log( data)
+// }
+
+// function footerLoaded(){
+//     console.log("footer loaded")
+// }
+
+// navabarLoad()
+// setTimeout(dataFetch , 2000 )
+// footerLoaded()
+
+
+// setTimeout(function , delay (in milliseconds))
+// 1 sec => 1000
+
+
+// Event Loop will work only when => callback queue !== emtpy  AND call stack === empty
+
+
+
+// for(let i = 0 ; i<10000000000 ; i++){
+
+// }
+// console.log("loop is done running")
+// function maruti800(){
+//     console.log("maruti800 is done running")
+// }
+
+// function BMW(){
+//     console.log("BMW is done running")
+// }
+
+// function Audi(){
+//     console.log("Audi is done running")
+// }
+
+
+// setTimeout(maruti800 , 0)
+
+// setTimeout(BMW , 0) 
+
+// setTimeout(Audi , 0)
+
+
+// setTimeout => use-cases => 
+
+// function alertsUser(){
+//     alert("subcribe to our newsletter")
+// }
+
+
+// // setTimeout(alertsUser , 10000)
+
+
+// //setInterval(alertsUser , 5000)
+
+// => setTimeout => limit => print something
+// => setInterval => 
+
+
+
+</script>
+</html>

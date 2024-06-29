@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // // localStorage.setItem(key , value)
+    // let str = "hi there , good morning"
+
+    // localStorage.setItem("str" , str)
+    // localStorage.setItem("numbers" , 14)
+    // localStorage.setItem("nstr" , "masai")
+
+    // let data = localStorage.getItem("str")
+
+    // localStorage.removeItem("str")
+
+    // localStorage.clear()
+
+    // console.log(data)
+
+    let obj = {
+        a:1 , 
+        b : 2
+    }
+
+    // store it , retrieve it , print it => output
+
+    // data to JSON String => JSON.stringify(data)
+
+    // JSON String to data => JSON.parse(data)
+
+    localStorage.setItem("obj" , JSON.stringify(obj))
+
+    obj.c = 12
+
+    localStorage.setItem("obj" , JSON.stringify(obj))
+
+    let data = JSON.parse(localStorage.getItem("obj"))
+
+    // console.log( data)
+</script>
+</html>

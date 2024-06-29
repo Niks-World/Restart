@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn">Click me !!</button>
+    
+</body>
+
+<script>
+    let btn = document.querySelector("#btn")
+
+    let flag = true // false
+
+    function handleClick(){
+
+        if(flag){
+            console.log("on")
+            flag = false
+            btn.style.backgroundColor = "black"
+            btn.style.color = "white" 
+        }else{
+            console.log("off")
+            flag = true
+            btn.style.backgroundColor = "white"
+            btn.style.color = "black" 
+        }
+         // "off"
+    }
+
+    btn.addEventListener("click" , handleClick)
+</script>
+</html>

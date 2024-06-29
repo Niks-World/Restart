@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 id="time">0</h2>
+    <button id="start-btn">Start</button>
+    <button id="stop-btn">Stop</button>
+    <button id="reset-btn">Reset</button>
+    <button id="reset-start-btn">Reset & Start</button>
+    
+</body>
+<script>
+
+    let time = document.getElementById("time")
+    let start = document.getElementById("start-btn")
+    let stop = document.getElementById("stop-btn")
+    let reset = document.getElementById("reset-btn")
+    let resetStart = document.getElementById("reset-start-btn")
+    let timeCount = 0 // 5
+    let timeCountInterval ;
+
+
+    function runTimer(){
+
+     timeCountInterval =  setInterval(()=>{
+            timeCount++
+            time.innerText = timeCount
+            // console.log(timeCount)
+        } , 1000)
+
+    }
+
+    // setTimeout(handleFunc , delay)
+
+    function stopTimer(){
+        clearInterval(timeCountInterval)
+        
+    }
+
+    function handleReset(){
+        clearInterval(timeCountInterval)
+        timeCount = 0
+        time.innerText = timeCount
+    }
+
+    function handleStartReset(){
+        clearInterval(timeCountInterval)
+        timeCount = 0
+        time.innerText = timeCount
+        runTimer()
+    }
+
+    // clearInterval(reference / id)
+
+
+    start.addEventListener("click" , runTimer)
+    stop.addEventListener("click" , stopTimer )
+    reset.addEventListener("click" , handleReset)
+    resetStart.addEventListener("click" , handleStartReset)
+
+
+    // Date
+
+    // function clock(){
+    //     let timeStamp = new Date()
+    //     let date = timeStamp.getDate()
+    //     let hour = timeStamp.getHours()
+    //     let minute = timeStamp.getMinutes()
+    //     let second = timeStamp.getSeconds()
+
+    //     // console.log(timeStamp)
+    //     // console.log(`${hour} : ${minute} : ${second}`)
+    //     time.innerText = `${hour} : ${minute} : ${second}`
+    // }
+
+    // setInterval(clock , 1000)
+
+ 
+
+
+
+</script>
+</html>

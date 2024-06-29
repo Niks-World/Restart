@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+//     // Async Programming
+//     let data ; 
+//     function handleData(){
+//         setTimeout(()=>{
+//      data = [
+//         {
+//             title : "mobile" , 
+//             price : 10000 , 
+//         }, 
+//         {
+//             title : "watch" , 
+//             price : 20000 , 
+//         }, 
+//         {
+//             title : "mobile" , 
+//             price : 5000 , 
+//         }, 
+//         {
+//             title : "tv" , 
+//             price : 9000 , 
+//         }, 
+//     ]
+//     return data
+//    }, 3500)
+//     }
+
+//    function showData(arr){
+//      return arr
+//    }
+
+//    function filterData(operation, param){
+//        let data = operation()
+//        return data.filter((ele)=>{
+//         ele.title == param
+//        })
+//    }
+
+//    function user(param){
+//            filterData(handleData , param)
+//    }
+
+//    user("mobile") // watch  tv
+
+   // user makes a call => moblile , watch , tv
+
+//    console.log(data) // undefined  ,  not defined 
+
+
+// let promise = new Promise((resolve , reject)=>{
+//    setTimeout(()=>{
+
+//     let data = [
+//         {
+//             title : "mobile" , 
+//             price : 10000 , 
+//         }, 
+//         {
+//             title : "tv" , 
+//             price : 20000 , 
+//         }, 
+//         {
+//             title : "mobile" , 
+//             price : 5000 , 
+//         }, 
+//         {
+//             title : "watch" , 
+//             price : 9000 , 
+//         }, 
+//     ]
+
+//      if(data){
+//         resolve(data)
+//      }else{
+//         reject('error , data is not being fetched')
+//      }
+    
+//    }, 3500)
+
+//    // resolve(arg) or reject(arg)
+// })  // => object
+// // states => resolved / fullfilled
+// //        => pending (default)
+// //        => rejected 
+
+// function user(param){
+   
+//   return promise.then((ele)=>{
+//        data = ele.filter((e)=>{
+//         return e.title == param
+//        })
+//        return data
+//    })
+//     .catch((err)=>{
+//         console.log(err)
+//     })  
+   
+// }
+
+//  console.log(user("mobile"))
+
+// promise handling
+
+
+
+// promise chaining   
+
+
+// fn => userData => {id : 1 , user : "virat"}
+
+// fn => userIdData => {email : virat@email.com}
+
+// function getUserData(){
+//     return new Promise((resolve , reject)=>{
+//         setTimeout(()=>{
+//             let userData = {id : 1  , user : "virat"}
+//             resolve(userData)
+//         } , 1500)
+//     })
+// }
+
+
+// // Additional Data
+
+
+// function getUserDataByID(id){
+//     return new Promise((resolve , reject)=>{
+//      setTimeout(()=>{
+//         if(id){
+//             let userIdData = {email : "virat@gmail.com" , age : 30}
+//             resolve(userIdData)
+//         }else{
+//             reject("no id present")
+//         }
+        
+//      } , 1500)
+//     })
+// }
+
+
+// // console.log(getUserData())
+// getUserData()
+// .then((res)=>{
+//     let id = res.id
+//     return getUserDataByID()  // promise
+// })
+// .then((res)=>{
+//     console.log(res)
+// })
+// .catch((err)=>{
+//     console.log(err)
+// })
+// .finally(()=>{
+//     console.log("db 1 used")
+// })
+
+
+
+// // ES 6 => async / await
+
+
+// function getUserData(){
+//     return new Promise((resolve , reject)=>{
+//         setTimeout(()=>{
+//             let userData = {id : 1  , user : "virat"}
+//             resolve(userData)
+//         } , 1500)
+//     })
+// }
+
+// function getUserDataByID(id){
+//     return new Promise((resolve , reject)=>{
+//      setTimeout(()=>{
+//         if(id){
+//             let userIdData = {email : "virat@gmail.com" , age : 30}
+//             resolve(userIdData)
+//         }else{
+//             reject("no id present")
+//         }
+        
+//      } , 1500)
+//     })
+// }
+
+
+// async function printStuff(){
+//    try {
+//     let value = await getUserData()
+//     let value2 = await getUserDataByID()
+
+//     console.log(value2)
+    
+//    } catch (error) {
+//       console.log(error)
+//    }
+    
+// }
+
+// printStuff()
+
+
+
+// promise => fetch
+
+// fetch()          // return promise
+
+// fetch('https://fakestoreapi.com/products')
+//             .then(res=>res.json())
+//             .then(json=>console.log(json))
+
+
+// => promise   => time constraint     ,    callback functions => callback hell
+
+// => state => 3 => resolve , reject , pending (default)
+
+// => resolve(param)   reject(param)
+
+// ES5
+// .then()
+// . catch
+
+// ES6
+// async function
+// await
+
+
+
+// async function add(){
+//     //await
+// }
+
+// let add = async ()=>{
+//     // await
+// }
+
+
+// promise chanining 
+
+// finally => both
+
+
+</script>
+</html>

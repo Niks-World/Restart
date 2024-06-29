@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    //ES 5  -  ES 6 (14 -15) => 7 ,  
+    // ECMAscript => set of rules 
+
+    // var 
+
+    // let , const  => variable keywords
+
+    // scoping => global and local scoped
+
+    // {
+    //     var store = 10  // globally scoped
+
+    //     console.log(store)
+    // }
+
+    //  console.log(store)
+
+
+    //  {
+    //     let letStore = 100  // block/local scoped 
+
+    //     console.log(letStore)
+    //  }
+
+    // //  console.log(letStore)
+
+    //  {
+    //     const constStore = 200  // block/local scoped
+
+    //     console.log(constStore)
+    //  }
+
+    //  console.log(constStore)
+
+
+// let vs const
+
+// profile 
+
+//  let phoneNo = 9911223344   // 
+//  const PANNO = "sdfkasf1133"  // kinda makes it immutable
+
+//  phoneNo = 8844556677
+//  PANNO = 'asdfsafa8332'
+
+//  console.log(phoneNo , PANNO)
+
+
+// const arr = [1,2,3,4,5,6,7]
+
+// arr.push(8)
+
+// // console.log(arr)
+
+// // am i reassigning a new value or just updating the existing one
+
+
+
+// // defining function with ES6 syntax
+
+// // function statement 
+// // function greet (){
+
+// // }
+
+
+// // function expression
+// // let greet = function (name){
+// //     return `hi ${name} , good morning`
+// // }
+
+
+// // console.log(greet("vikram"))
+
+
+// // // arrow functions
+// // let greet = (name)=>{
+// //      return `hi ${name} , good morning`
+// // }
+
+// // console.log(greet("vikram"))
+
+
+// // // create a add function , accepts 2 params , and return the sum of them
+
+// // // let add = (a,b)=>{
+// // //     return a+b
+// // // }
+
+// // let add = (a,b)=>a+b
+
+// // console.log(add(1,2))
+// // console.log(add(12, 57))
+
+
+// // Destructuring 
+
+// let NewsData = {
+//       totalPages : 20 , 
+//       domain : "masai.com",
+//       countryNews : {
+//           india : {
+//               headlines : [1,2,3,4,5] , 
+//               finance : [5,6,7,8,9] , 
+//               sports : {
+//                 cricket : [1,2,3],  
+//                 football : [1,2,3]
+//               } , 
+//               entertainment : [7,8,9,34,5]
+//           } , 
+//           france  : {
+//               headlines : [1,2,3,4,5] , 
+//               finance : [5,6,7,8,9] , 
+//               sports : [2,3,4,5,6] , 
+//               entertainment : [7,8,9,34,5]
+//           } , 
+//           UK  : {
+//               headlines : [1,2,3,4,5] , 
+//               finance : [5,6,7,8,9] , 
+//               sports : [2,3,4,5,6] , 
+//               entertainment : [7,8,9,34,5]
+//           } , 
+//           USA : {
+//               headlines : [1,2,3,4,5] , 
+//               finance : [5,6,7,8,9] , 
+//               sports : [2,3,4,5,6] , 
+//               entertainment : [7,8,9,34,5]
+//           }
+//       }
+// }
+
+// // india
+// // india => sports => 8times
+
+// //  let indSports = NewsData.countryNews.india.sports
+
+// let {countryNews :{ india : { sports : {cricket , football}}}} = NewsData
+
+// console.log(cricket)
+
+//  console.log(indSports)
+
+// france => sports
+
+
+// let obj = {
+//     a : 1 , 
+//     b : 2 , 
+//     c : 3 , 
+//     nobj : {
+//         d : {
+//              dd : 11 , 
+//              ddd : 111 , 
+//              dddd : 1111
+//         } , 
+//         e : 10
+//     }
+// }
+
+// // let {a,b,c , nobj} = obj
+// // let {d,e} = nobj
+
+// let {a,b,c , nobj : {d,e}} = obj
+// // a = obj.a
+// // b = obj.b
+// // c = obj.c
+
+// console.log(a)
+// console.log(d)
+
+// let arr = [1,2,3,4,5,6]
+
+// let [b,f,d,e,c] = arr
+
+// let obj = {
+//     a : 1 ,
+//     b :2 , 
+//     c : 3
+// }
+
+// let {c} = obj
+//console.log(c , f) // 3 , 6  / 6 ,3 
+
+
+// Hint : typeof of an array and also of an object
+
+
+
+// spreading 
+
+let arr1 = [1,2]
+
+let arr2 = [6,7]
+
+let narr = [...arr1 , ...arr2]
+
+console.log(narr)
+
+let obj1 = {
+    a : 1 , 
+    b : 2 , 
+    c : 3
+}
+
+let obj2 = {
+    d : 4 ,
+    e : 5 ,
+    f : 6
+}
+
+let nobj = {...obj1 , ...obj2}
+
+console.log(nobj)
+
+let marr = [arr1 , ...arr2]
+
+console.log(marr)  // [[1,2] , 6,7]
+
+// let this = [...arr1  , ...arr2 , ...obj1]  // error :4
+
+// // a:1 , 
+
+// console.log(anArr)
+
+//  arr1.push(arr2) // 2D
+
+// console.log(arr1)
+
+// i want an array which is comibination of both
+
+
+
+
+</script>
+</html>

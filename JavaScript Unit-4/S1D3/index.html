@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+
+    // Objects 
+    // key - values pairs    =>    dictionary
+
+    // let obj = {
+    //      a : 1 , 
+    //      b : 2 , 
+    //      c : [1,2,3] , 
+    //      d : "strings"
+    // }
+
+    // let arr = [1 , 2 , [1,2,3] , "strings"]
+
+    // accessibity
+
+    // classroom => 40
+
+    // var students = ['a' , 'b' , 'c' , 'e'] 
+
+    // var student1 = ["name" , "class" , "address" , "id"] // student2 , student3
+
+    // var classroom = [student1 , student2 , student3]
+
+    // name 
+
+    // var student1 = {
+    //     name : "rahul" , 
+    //     class : "5th" , 
+    //     id : 12
+    // }
+
+//     var student2 = {
+//         class : '5th' , 
+//         id : 3 , 
+//         name : "abhishek" 
+//     }
+
+
+//     var classroom = [student1 , student2]
+
+//    for(var i = 0 ; i<classroom.length ; i++){
+//        console.log(classroom[i].name)
+//    }
+
+
+    // data - structure => array   ,    objects
+
+//  0 1 2 3 4 
+
+    // var student1 = {
+    //     name : "rahul" , 
+    //     class : "5th" , 
+    //     id : 12 , 
+    //     name : "ram"
+    // }
+
+    // // student1.name // dot notation
+
+    // //console.log(student1["name"]) // square notation
+
+    // // keys are supposed to be unique
+
+    // // console.log(student1.name)
+
+    // student1.id = 50 // update the value
+    // student1.age = 20 // create the new key-value pair
+
+    // // console.log(student1.id)
+
+    // console.log(student1)
+
+
+    // dummy PAN card => obj => 5 values 
+    // intially 3 values 
+    // 2 values (1 value (dot notation)  , (sq notation))
+
+
+    // var obj = {
+    //     a : 1 , 
+    //     b : 2 , 
+    //     c : 3 ,  
+    //     d : {
+    //         aa : 11 , 
+    //         bb : 12 , 
+    //         cc : {
+    //             aaa : 111 , 
+    //             bbb : 122
+    //         }
+    //     }
+    // }
+
+    // // obj.d.bb
+
+    // console.log(obj.d.bb)
+    // console.log(obj.d.cc.bbb)
+    // console.log(obj["d"]["cc"]["bbb"])
+
+
+    // let obj = {
+    //     a : 1 , 
+    //     b : 2 , 
+    //     c : 3 , 
+    //     d : 4 , 
+    //     e : 5 ,
+    //     z : 10
+    // }
+
+
+    // let target = 3 
+
+    // for(var z in obj){
+    //    if(obj[z] % 2 === 0 ){ // ""
+    //     console.log(z) 
+    //    }
+    // }
+
+//     let obj = {}
+
+//     let a = "a"
+
+//     console.log(obj[a]) // undefined // falsy
+// // if obj[a] is undefined then we wanna make the condition true
+//     if(!obj[a]){
+//         obj[a] = 10
+//     }else{
+//         console.log("not present")
+//     }
+
+//      console.log(obj)
+
+    //  a , b , c ,d 
+
+
+    //  [z] // "a" , "b" , "c" 
+
+
+    let popul = ["action" , "drama" , "action" , "comedy" , "comedy" , "action"]
+
+
+    // =>  action = 3 , drama = 1 , comedy = 2
+
+    // max => recommend
+
+    // 4 mins
+
+    let obj = {}
+
+    for(var i = 0 ; i<popul.length ; i++){
+        let genre = popul[i]
+        // console.log(obj[genre]) // obj["action"] , obj["drama"]
+        if(obj[genre]){ // obj[action]
+          obj[genre] += 1
+        }else{
+            obj[genre] = 1  // obj["action"] = 1
+        }
+     }
+
+     console.log(obj)
+
+     var max = 0
+     var maxKey ;
+
+     for(var key in obj){
+          if(obj[key] > max){
+            max = obj[key]
+            maxKey = key
+          }
+     }
+
+     console.log(max , maxKey)
+
+     // 1 => action : 1
+     // 2 => drama : 1
+     // 3 => action : 1+1
+     // 6 => action : 2 + 1
+
+
+   
+
+
+</script>
+</html>

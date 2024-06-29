@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+
+    </div>
+
+    <div>
+
+    </div>
+
+    <div>
+
+    </div>
+
+
+    
+</body>
+
+<script>
+
+// create a function
+
+// greet("firstName" , "lastName")
+
+// return ("hi firstname lastName , very good morning to you")
+
+// function greet(first , last){
+//     // first = rohit
+//     // last = undefined
+//     // return ("hi" , first , last , "very good morning to you")
+//     return (`hi ${first } ${last} very good morning to you `)
+// }
+
+// console.log(greet("jadu" , "kumar"))
+// console.log(greet("rohit" ))
+
+// string concatination
+
+// var a = "firstName"
+// var b = "lastName"
+
+
+//  console.log(a+" "+b)
+
+ // type coercion // type conversion
+
+ // JS => runtime => intelligent => 
+
+//  var a = 10
+
+//  var b = "12"
+
+//  var c = "2"
+
+// console.log(a+b) // 1012 
+// console.log(a-b) // error , 2 , -2 , NaN , 10
+// console.log(b/a) // 1 
+// console.log(a*b) // 120
+// console.log(a**c) // 20 or 100
+// console.log(a%c)
+
+// % , **
+
+// / => quotient   ,  % => remainder
+
+// var num = 19
+
+// console.log(19%2 == 0)
+
+
+
+// + and one of the variable is a string => concatination
+// type coercion
+
+
+// Logical Operators => AND , OR , NOT
+
+// AND => &&  => if there even one false condition , entire 
+// condition will become false
+
+// let a = true
+
+// let b = false
+
+// let num = 21+21 // 42
+
+// if(a && num%2==0){
+//     console.log("this is true")
+// }else{
+//     console.log("this is false")
+// }
+
+// console.log(true && true && true && false)
+// console.log(true && true && true && 0)
+// console.log(1 && 1 && 1 && false)
+// console.log(1 && 1 && 1)
+// console.log(0 && 0 && false)
+
+// OR => ||   => if there's even one true condition , entire 
+// condition will become true.
+
+//console.log(true || flase || true)
+
+// console.log((false || true ) && (true && true ) && !(false && true))
+
+// true && true && true
+
+
+// NOT => ! => output => opposite
+
+
+// console.log(!true)
+
+
+// function => (password) => length > 10  and the password is a string
+// strong 
+// weak
+
+// [1,2,3,4]
+
+// function passwordChecks(pass){
+//      if(pass.length>10 && typeof pass == "string"){
+      
+//             return "strong password"
+    
+//      }else{
+//         return "weak password"
+//      }
+// }
+
+// console.log(passwordChecks("dkfjlsfs12344"))
+
+
+
+// Relational Operators
+
+// > , < , >= , <=
+
+// var a = 10
+// var b = 15 
+// var c = 20
+// var d = 15
+// var e = "20"
+
+// console.log(a>b)
+// console.log(a<b)
+// // console.log(b>d)
+
+// //console.log(b=d)
+// //console.log(b==d)
+// // console.log(b>=d)
+
+// //console.log(c == e) // type coercion // no type checking , only values are checked
+
+//  //console.log(c === e) // type AND value both
+
+
+// // =
+// // == 
+// // ===
+
+
+// // !=
+// // !==
+
+// // console.log(c != d) // c = 20   , d = 15 , c != d
+// console.log(c != e) // c != e
+// console.log( c !== e) // c !== e
+
+
+// loops  => 
+// i = 0
+
+// while(i<arr.length){
+//  i++
+// }
+
+
+// for(var i = 0 ; i<arr.length ; i++)
+
+
+// for   vs   while
+
+// syntax
+// prefences
+
+// arr => 0 to arr.length
+
+// arr    ,      target 
+
+// arr => 10 , 000       => loop => target  => linear search => n
+
+// binary => logn
+
+// linear   vs binary 
+
+
+
+// for 
+
+// function => function( min  , max)  => print all the elements between those
+// , including min and max
+
+//var sum = 0 // 12 + 15 => 27
+// function rangePrinter(min , max , flag){
+//     var sum = 0 
+//       for(var i = min ; i <= max   ; i++){
+//            if(flag && (i%2===0)){
+//                 // console.log(i)
+//                 sum+=i
+//            }else if(!flag && (i%2!==0)){
+//                 //  console.log(i)
+//                  sum+=i
+//            }
+//       }
+
+//       return sum
+// }
+
+// // rangePrinter(2,5)
+// // rangePrinter(1,  11)
+//  console.log(rangePrinter(2 , 7 , true)) // 12 
+//  console.log(rangePrinter(2 , 7 , false)) // 15   |    27
+
+// 2 3 4 5 6 7 
+// 2 4 6
+// 3 5 7
+
+// rangePrinter(min , max , flag)
+// flag => either true or false
+// flag => true => only print even number
+// flag => false => only print odd number
+
+// the sum of even nos is sum
+// the sum of odd nos is sum
+
+
+// loops in arrays and strings
+
+// var arr = [3,7,9,1,5]
+//         //    0 1 2 3 4 
+// // for(var i = 0 ; i<=arr.length-1 ; i++)
+// for(var i = 0 ; i<arr.length ; i++){
+//     // if(i%2==0){
+//     //     console.log(arr[i])
+//     // }
+//     // if(arr[i]%2==0){
+//     //     console.log(arr[i])
+//     // }
+//     arr[i] = arr[i]*2
+
+    
+    
+// }
+// console.log(arr)
+
+// var str = "123456"
+// var nstr = ""
+
+// for(var i = 0 ; i<str.length ; i++){
+//     // console.log(str[i])
+//     nstr += str[i]*2
+// }
+
+// console.log(nstr)
+
+// print all elements which are at even position
+// print all elements which are even 
+
+
+
+// Function which counts the length of string , the catch is that
+// you'll be give an array of strings and you have to calculate the
+// length of each string and do a final sum of it
+
+
+// var arr = ["fsdaf" , "masai" , "school" , "fsafa"]
+
+// function lengthCalculator(arr){
+//     var sum = 0
+//      for(var i  = 0 ; i<arr.length ; i++){
+//         sum += arr[i].length
+//      }
+//      return sum
+// }
+
+
+// console.log(lengthCalculator(arr))
+// console.log(lengthCalculator(["1" , "ab"]))
+
+
+
+// var string = "masiaschool"  // vowels in this string
+
+// var vowels = "aeiou"
+
+// var count = 0
+
+// for(var i = 0 ; i<string.length ; i++){
+//     var val = string[i]
+//      if(val == "a" || val == "e" || val == "i" || val == "o" || val == "u"){
+//         count++
+//      }
+// }
+
+// console.log(count)
+
+
+
+// function checks password strength => str => "#$%&*"  and it's greater that 8 length
+
+function passCheck(str){
+    var len = str.length
+    
+    if(len<8){
+        return "weak password"
+    }
+    var flag = false
+    for(var i  = 0 ; i<str.length ; i++){
+        var val = str[i]
+        if(val == "#" || val == "$" || val == "%" || val == "&" || val == "*" ){
+            flag = true
+        }
+    }
+
+    if(flag){
+        return "strong password"
+    }else{
+        return "weak password"
+    }
+}
+
+console.log(passCheck("sdfasdfs32*"))
+console.log(passCheck("fsfds&"))
+</script>
+</html>

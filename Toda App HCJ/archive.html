@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management - Archive</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> 
+        <a href="archive.html">Archive</a>
+    </nav>
+    <h1>Archived Tasks</h1>
+    <section id="filter-section">
+        <select id="filter-priority">
+            <option value="all">All Priorities</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <select id="filter-status">
+            <option value="all">All Statuses</option>
+            <option value="pending">Pending🔃</option>
+            <option value="completed">Completed✅</option>
+        </select>
+    </section>
+    <section id="archive-list-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Restore</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="archive-list">
+                <!-- Archived todo items will be injected here dynamically -->
+            </tbody>
+        </table>
+    </section>
+    <script src="./scripts/archive.js"></script>
+</body>
+</html>

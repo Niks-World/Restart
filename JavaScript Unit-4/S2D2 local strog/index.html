@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      #container>div{
+        border: 1px solid black;
+        padding: 10px;
+      }
+      #container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 70%;
+        margin: auto;
+      }
+      #graph>div{
+        margin:10px
+      }
+      #graph{
+        display: flex;
+        align-items: end;
+        border: 1px solid midnightblue;
+        margin-top: 20px; 
+      } 
+    </style>
+</head>
+<body>
+
+
+    <button id="form-page">Form Page</button>
+
+
+    <div id="container">
+
+    </div>
+
+    <button id="showGraph">
+        Show Graph for Above Data
+    </button>
+
+    <div id="graph">
+
+    </div>
+    
+</body>
+<script>
+let container = document.getElementById('container')    
+let graph = document.getElementById("graph")
+let showGraph = document.getElementById("showGraph")
+let formPage = document.getElementById("form-page")
+
+
+let flag = true
+
+
+let data = JSON.parse(localStorage.getItem("data"))  // string
+
+// [{} , {} , {} , {1} , {2} , {3} , {4}]
+
+// [{} , {} , {} , {4} ]
+
+let showData = (arr)=>{
+    container.innerHTML = ""
+    arr.forEach((ele)=>{
+        //   console.log(ele)
+        let {country , population , emission} = ele
+
+        let card = document.createElement("div")
+
+        let countryEle = document.createElement("p")
+        countryEle.innerText = country
+
+        let populationEle = document.createElement('p')
+        populationEle.innerText = population
+
+        let emissionEle = document.createElement('p')
+        emissionEle.innerText = emission
+
+        card.append(countryEle , populationEle , emissionEle)
+
+        container.append(card)
+
+        // margin-right , style.marginRight
+        // border-radius , borderRadius
+    })
+
+}
+
+let showGraphs = (arr)=>{
+
+
+    arr.forEach((ele)=>{
+        let {country , population , emission} = ele
+
+        // bar graph => width = same  ; height = change => emission
+        let card = document.createElement("div")
+
+        let bar = document.createElement("div")
+        bar.style.width = "50px"
+        bar.style.height = `${emission*10}px`
+        bar.style.backgroundColor = "orange"
+        
+        let title = document.createElement("p")
+        title.innerHTML = `<i>${country}</i>`
+
+
+        card.append(bar , title)
+
+        graph.append(card )
+
+    })
+}
+
+
+
+// showGraph.addEventListener(event , callback function)
+showGraph.addEventListener("click" , ()=>{
+    if(flag){
+        showGraphs(data)
+        flag = false
+    }else{
+        graph.innerHTML = ""
+        flag = true
+    }
+})
+
+formPage.addEventListener("click" , ()=>{
+    window.location.href = "form.html"
+    console.log("triggered")
+})
+showData(data)
+
+</script>
+</html>
+
+<!-- <div style="color:red">
+<p>India</p>
+<p>100</p>
+<p>12</p>
+</div> -->
+
+

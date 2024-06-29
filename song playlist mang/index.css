@@ -1,0 +1,63 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  nav{
+    background-color: aqua;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    height: 5vh;
+    border-radius: 20px;
+  }
+  nav a{
+    /* gap: 20px; */
+    /* border: 1px solid red; */
+    margin-left: 30pc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form, .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  form input, .controls input, .controls select, form button {
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f4f4f4;
+  }
+  
+  .actions button {
+    margin-right: 5px;
+  }
+  

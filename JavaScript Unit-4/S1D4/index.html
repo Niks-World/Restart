@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+// functions  => function statement , function expression 
+
+// we can treat functions as a variable too ?  true
+
+// function greet(){
+//     return "hey"
+// }
+
+// let greet = function (){
+//      return "hey"
+// }
+
+// let obj = {
+//     a : 1 ,
+//     b : function (name){
+//         return "hey"+name
+//         // console.log('hey')
+//     }
+// }
+
+// console.log(obj.b("virat"))  // hey  / fn  / 
+
+// function add(a,b){
+//     // a = function greet(){return "hi"}
+//     // b 
+
+//     // a() // 'hi'
+//     console.log(a(),b)
+// }
+
+
+// function greet(){
+//     return "hi !"
+// }
+
+// add(greet , 10)
+
+// callback functions
+
+
+// function Calculator(operation , a , b){
+//     // operation = function add(a,b){
+//     //     return a+b
+//     // }
+//     // a = 2 
+//     // b = 3
+
+//     // operation() //  add() // undefined + undefined = NaN
+//     console.log(operation(a,b)) // add(a,b) // 2 + 3 = 5
+ 
+// }
+
+// function add(a,b){
+//     // a = undefined
+//     // b = undefined
+//     return a+b
+// }
+// function sub(a,b){
+//     return a-b
+// }
+// function mult(a,b){
+//     return a*b
+// }
+
+// Calculator(function (){
+//     return a+b
+// } , 2,3) // 5
+// Calculator(sub , 10, 7) // 3
+// Calculator(mult , 10 , 10) // 100
+
+
+// HOF => Higher order functions => It either takes a callback
+// function as parameter or it return a callback function
+
+// Calculator , add , sub , mult
+
+
+// Function Statement 
+
+// function greet(){
+
+// }
+
+
+// // Function Expression
+
+// let greet = function (){
+
+// }
+
+// // Anonymous function
+
+// function (){
+
+// }
+
+// ()=>{
+
+// }
+
+// // Callback function
+
+// function Master(callback){
+//    return callback()
+// }
+
+// let callback = ()=>{
+
+// }
+
+
+// Master(callback) // Master will be HOF , callback will be callback function
+
+// forEach , map , filter , reduce , sort 
+// inbuilt functions or methods
+
+
+// let arr = [1,2,3,4,5]
+
+// // 6 element at the end
+// arr.push(6)
+
+// // let obj = {
+// //     greet : function (name){
+// //         return "hi"+name
+// //     }
+// // }
+
+// // obj.greet("rohit")
+
+
+// // let arr = {
+// //     push : ()=>{
+
+// //     } , 
+// //     pop : ()=>{
+        
+// //     }
+// // }
+
+
+// let str = "abcdefghi"
+
+// console.log(str.toUpperCase())   // 
+
+// type of Array    ,   type of object
+
+
+// let str = "the dog is gone ." // ["the" , "dog" , "is" , "gone"]
+
+// let nstr = str.split(" ")
+
+// console.log(nstr)
+
+// let encryptData = "a#dog#was#there"
+
+// let arr = encryptData.split("#")
+
+// console.log(arr.join(' '))
+
+
+// let encryptData = "there#was#dog#a.b" // there was dog a => a dog was there , .f => let it be
+
+// // "good#is#weather.b" // backward sentence
+// // "all#the#best.f"
+
+
+// // str = split(".") => str1 str2
+// // if (str2 == b){
+//     //   str1.split("#").reverse
+// // }
+
+// let Decrypt = (str)=>{
+//     str = str.split('.') // [str1 , str2]
+
+//     if(str[1] == "b"){
+//         return str[0].split("#").reverse().join(' ')
+//     }else{
+//         return str[0].split("#").join(' ')
+//     }
+// }
+
+// console.log(Decrypt(encryptData))
+// console.log(Decrypt("good#is#weather.b"))
+// console.log(Decrypt("all#the#best.f"))
+
+
+// splice   &&   slice  => difference 
+
+
+
+// HOF's => forEach , Map , filter , reduce , sort
+
+
+// let arr = [1,2,3,4,5,6,7,8] // => *2 '1'
+
+// // arr.forEach(function (ele , i , arr){
+
+// //     console.log(ele , i , arr)
+
+// // })
+
+// // forEach doesn't return anything => undefined
+
+
+// let narr = arr.map((ele , i , arr)=>{
+//      return ele*2
+// })
+
+// let stringArr = arr.map((ele)=>{
+//     return ele.toString()
+// })
+
+// console.log(stringArr)
+
+// // [2 , 6 , ]
+
+// // convert each element into a string
+
+
+// console.log(narr)
+
+// console.log(arr)
+// map returns but new modified array
+
+// let data = [
+//             {product : "cap" , quantity : 20 , price : 300} , 
+//             {product : "shirt" , quantity:25 , price : 400} , 
+//             {prodcut : "trouser" , quantity:30 , price : 500} , 
+//             {product : "shoes" , quantity : 50 , price : 1000}
+// ]
+
+// forEach and print each element  // printing stuff 
+// map and print each element
+
+// data.forEach((ele)=>{
+//       console.log(ele)
+// })
+
+// let ndata = data.map((ele , i)=>{
+//    ele.quantity = ele.quantity + 5 
+//   return ele
+// })
+
+// console.log(ndata , data)
+
+// if i wanna add 5 products in each category 
+
+
+// 15% => 20 days
+
+// let data = [
+//             {product : "cap" , quantity : 20 , price : 300} , 
+//             {product : "shirt" , quantity:25 , price : 400} , 
+//             {prodcut : "trouser" , quantity:30 , price : 500} , 
+//             {product : "shoes" , quantity : 50 , price : 1000}
+// ]
+
+
+// function DiscountedData(data , discount){
+
+//     // update the data's price based on the discount and return the updated data
+//     // forEach or Map
+
+//     // let ndata = data.map((ele)=>{
+//     //     ele.price = ele.price-discount
+//     //     return ele
+//     // })
+
+//     // return ndata
+
+//     return data.map((ele)=>{
+//         ele.price = ele.price-discount
+//         return ele
+//     })
+
+   
+
+//     // [220 , 320 , 420 , 920]
+
+// }
+
+// console.log(DiscountedData(data , 80))
+
+
+// let data = [
+//             {product : "cap" , quantity : 20 , price : 300} , 
+//             {product : "shirt" , quantity:25 , price : 400} , 
+//             {product : "trouser" , quantity:30 , price : 500} , 
+//             {product : "shoes" , quantity : 50 , price : 1000}
+// ]
+
+
+
+// function Inventory(data, limit ){
+ 
+//     let ndata = data.filter((ele)=>{
+//         return ele.quantity<limit
+//     })
+
+//     return ndata
+
+// }
+
+
+// console.log(Inventory(data , 25))
+// console.log(Inventory(data , 50))
+
+
+// filter returns new modified array
+
+// let arr = ['a' , 'b'  , 'c' , 'd']  // "abcd"
+
+
+// let data = [
+//             {product : "cap" , quantity : 20 , price : 300} , 
+//             {product : "shirt" , quantity:25 , price : 400} , 
+//             {product : "trouser" , quantity:30 , price : 500} , 
+//             {product : "shoes" , quantity : 50 , price : 1000}
+// ]
+
+
+// // let value = arr.reduce((acc , curr)=>{
+// //        return acc+curr
+// // } , "hello")
+// // // hint => now elements are objects
+// // console.log(value)
+
+// let total = data.reduce((acc , curr)=>{
+//     return acc + curr.price
+// } , 0)
+
+// console.log(total)
+
+
+// let arr = ["a" , "b" , "b"  , "a"  , "c"  , "a"]
+
+// let freq = arr.reduce((acc, curr)=>{
+
+//     if(acc[curr]){
+//       acc[curr]++
+//     } else{
+//         acc[curr] = 1
+//     }
+
+//     return acc
+
+// }, {})
+
+// console.log(freq)
+
+
+
+// let version = ['v1.4' , "v2.6" , 'v5.5' , 'v9.4' , 'v7.8']
+
+// //we want the total no of minor patches in above versions
+// // reduce and split and map
+
+// // 
+
+// // 1.0.4.19
+
+// let narr = version.map((ele)=>{
+//      let minor = ele.split('.')
+//     //  console.log(minor)
+//     return Number(minor[1])
+// }).reduce((acc,curr)=>{
+//     return acc+curr
+// } )
+
+// console.log(narr)
+
+// .split().reverse() // method chaining
+
+
+
+
+// {a:3 , b : 2 , c :1}
+
+// sort
+
+// let arr = [2,1,11, 72,6,7,8]
+
+// let narr = arr.sort((a,b)=>{
+//     return b-a
+// })
+
+// console.log(narr)
+
+
+// let data = [
+//             {product : "cap" , quantity : 20 , price : 300} , 
+//             {product : "shirt" , quantity:25 , price : 400} , 
+//             {product : "trouser" , quantity:30 , price : 500} , 
+//             {product : "shoes" , quantity : 50 , price : 1000}
+// ]
+
+// function sort(arr , condition){
+//    if(condition == "asc"){
+//     return arr.sort((a,b)=>a.price-b.price)
+//    }else{
+//     return arr.sort((a,b)=>b.price-a.price)
+//    }
+// }
+
+
+// console.log(sort(data,"desc"))
+
+
+
+// HOF 
+
+// forEach => return => undefined    ;    method-chaning => false
+// map  => returns => new modified array ;   method-chaning => true
+// filter => returns => new filtered array ;   method-chaning => true
+// reduce => returns => a single value  ;   method-chaning => true => only if the acc was an array
+// sort => returns => sorted array  ; method-chaning => true
+
+ // if it(sort) return new array or just modifies the intial one ?
+</script>
+</html>

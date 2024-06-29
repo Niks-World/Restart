@@ -1,0 +1,12 @@
+- variables => var
+- strictly and dynamically(loosely) => loosely / dyna
+- JS doesn't checks the type at compiletime(compiler) rather it checks the type in runtime
+- functions => print or return and store
+- undefined and null => implicit(by default lang. attaches it) |  explicit(devs give this dummy value)
+- datatypes => primitive(immutable) and non primitive(mutable)
+- arrays => syntax | length
+- strings => syntx | length  | "" , '' , `` , template literals 
+- typeof
+- truthy and falsy => any no other than 0 , true   |   0 , undefined , null
+
+- effort => assignment and quizzes => 60%  40% (mdn , google , stackoverflow , AI)
